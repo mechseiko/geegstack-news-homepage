@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: #effafa;
+}
+
+header {
+  height: 100px;
+  background: #7b8e8e url(../assets/images/bg-pattern-footer-desktop.svg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 10px;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+header section {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 0px #cccccc7e;
+          box-shadow: 0px 0px 20px 0px #cccccc7e;
+}
+
+header section img {
+  width: 15px;
+}
+
+header div.flex {
+  width: 85%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .filters {
+  margin: 5px 10px 5px 0px;
+  background-color: #eef6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px 0px 0px 3px;
+}
+
+header .filters span {
+  color: #5ba4a4;
+  padding: 4px;
+  font-size: 0.9rem;
+}
+
+header .filters button {
+  cursor: pointer;
+  border: none;
+}
+
+header .clear {
+  background: transparent;
+  border: none;
+}
+
+main {
+  width: 80%;
+  margin: 50px auto;
+}
+
+article {
+  background-color: white;
+  margin: 15px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px 0px #cccccc7e;
+          box-shadow: 0px 0px 20px 0px #cccccc7e;
+}
+
+article button {
+  background-color: #eef6f6;
+  color: #5ba4a4;
+  padding: 6px 8px;
+  margin: 3px 5px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+article button:hover {
+  background-color: #5ba4a4;
+  color: white;
+}
+
+article img {
+  width: 70px;
+  margin-right: 15px;
+}
+
+.job-details > * {
+  margin: 10px 0px;
+}
+
+.job-details > * span {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.job-details > * span .job-company {
+  color: #5ba4a4;
+  font-weight: 700;
+}
+
+.job-details > * .job-new, .job-details > * .job-featured {
+  padding: 2px 5px 2px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 700;
+  padding-top: 5px;
+}
+
+.job-details > * .job-new {
+  background-color: #5ba4a4;
+}
+
+.job-details > * .job-featured {
+  background-color: #2c3a3a;
+}
+
+.job-details > p {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.job-details > p:hover {
+  color: #5ba4a4;
+}
+
+div.job-details :last-of-type span {
+  color: #7b8e8e;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 75px;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin: 45px 0px;
+  }
+  article img {
+    width: 50px;
+    top: -25px;
+    position: absolute;
+  }
+  article .job-details {
+    padding-top: 20px;
+  }
+  article div {
+    width: 100%;
+  }
+  article button {
+    margin-left: 0px;
+  }
+  article > div.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom: 1px solid #7b8e8e;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
