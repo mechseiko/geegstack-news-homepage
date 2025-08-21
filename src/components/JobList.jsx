@@ -16,7 +16,7 @@ const jobList = ({job, addToFilters}) => {
                         <span>{job.postedAt}</span>
                         <span>.</span>
                         <span>{job.contract}</span>
-                        {/* <span>.</span> */}
+                        <span>.</span>
                         <span>{job.location}</span>
                     </div>
                 </div>
