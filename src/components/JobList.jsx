@@ -12,7 +12,7 @@ const jobList = ({job, addToFilters}) => {
                         {job?.featured && <span className='job-featured '>FEATURED</span>}
                     </div>
                     <p>{job.position}</p>
-                    <div className='flex '>
+                    <div className='flex'>
                         <span>{job.postedAt}</span>
                         <span>.</span>
                         <span>{job.contract}</span>
